@@ -18,11 +18,11 @@
 
 .header__add__upper .header__add__upper__ul li {
   border-right: 1px solid;
+  border-radius: 0;
 }
 
 .header__add__upper .header__add__upper__ul li a {
   height: 100%;
-  border-radius: 0;
 }
 
 .header__color {
@@ -120,6 +120,7 @@
 .header__container .header .header__upper .header__upper__info a {
   width: 33%;
   border: none;
+  border-radius: inherit;
   background: transparent;
   display: -webkit-box;
   display: flex;
@@ -137,6 +138,10 @@
   height: 100%;
   width: 15%;
   overflow: auto;
+}
+
+.header__container .header .header__upper .header__upper__info a:last-child {
+  border-right: 0;
 }
 
 .header__container .header .header__lower {
@@ -240,6 +245,10 @@
   width: 100%;
   border-style: none;
   color: black;
+}
+
+.header__container .header .header__lower .header__lower_ul li:last-child {
+  border-right: 0;
 }
 
 .header__container .header .header__lower .header__lower_ul .header__lower_ul__div {
