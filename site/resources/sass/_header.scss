@@ -27,7 +27,10 @@
         width: 100%;
         margin: 0em 15%;
     }
-    width: 100%;
+    @media (min-width: 1000px) {
+        // margin: 0em;
+    }
+    
     height: 100%;
     display: flex;
     margin: 0em;
@@ -68,10 +71,11 @@
                 }
             }
             .header__upper__info {
-                display: flex;
+                display: none;
                 width: 0%;
                 @media (min-width: 1000px) {
                     width: 50%;
+                    display: flex;
                 }
                 background: #ec1d27;    
                 a {
@@ -186,7 +190,6 @@
     }
     img {
         height: 100%;
-        width: 20%;
     }
 }
 .header__add__lower {

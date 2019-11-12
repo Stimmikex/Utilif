@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('footer', function() {
+    return view('inc/footer');
+});
+
 Route::get('header', function() {
     return view('inc/header');
 });
