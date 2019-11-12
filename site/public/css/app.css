@@ -11,7 +11,7 @@
   -webkit-box-direction: normal;
           flex-direction: row;
   list-style: none;
-  height: 2em;
+  height: 2.4em;
   padding: 0;
   margin: 0em 1em;
 }
@@ -64,7 +64,7 @@
 }
 
 .header__container .header .header__upper .header__upper__search {
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: flex;
   margin: 0.3em;
@@ -78,6 +78,7 @@
 }
 
 .header__container .header .header__upper .header__upper__search button {
+  padding: 0.7em;
   height: 100%;
   width: 10%;
   border: none;
@@ -92,12 +93,12 @@
 .header__container .header .header__upper .header__upper__info {
   display: -webkit-box;
   display: flex;
-  width: 35%;
+  width: 50%;
   background: #ec1d27;
 }
 
 .header__container .header .header__upper .header__upper__info a {
-  width: 50%;
+  width: 33%;
   border: none;
   background: transparent;
   display: -webkit-box;
@@ -105,12 +106,17 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  margin: 0.2em;
+  border-right: 1px solid;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-flow: column-reverse;
 }
 
 .header__container .header .header__upper .header__upper__info a .header__upper__info_image {
-  height: auto;
   margin: 0em 0.5em;
+  height: 100%;
+  width: 15%;
+  overflow: auto;
 }
 
 .header__container .header .header__lower {
@@ -131,6 +137,8 @@
   -webkit-box-pack: end;
           justify-content: flex-end;
   margin: 0;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .header__container .header .header__lower .header__lower_ul li {

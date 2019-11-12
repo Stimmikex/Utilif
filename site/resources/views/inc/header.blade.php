@@ -20,6 +20,7 @@
                     <div class="header__upper__info">
                         <a href="pages/info.php" class="btn btn-default">Info<img src="/img/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
                         <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
+                        <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
                     </div>
                 </div>
                 <!--Div category-->

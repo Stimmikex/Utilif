@@ -38,7 +38,7 @@
             flex-direction: row;
             justify-content: space-between;
             .header__upper__search {
-                width: 60%;
+                width: 50%;
                 display: flex;
                 margin: 0.3em;
                 input {
@@ -48,6 +48,7 @@
                     background: #ff8d8d;
                 }
                 button {
+                    padding: 0.7em;
                     height: 100%;
                     width: 10%;
                     border: none;
@@ -60,18 +61,22 @@
             }
             .header__upper__info {
                 display: flex;
-                width: 35%;
+                width: 50%;
                 background: #ec1d27;
                 a {
-                    width: 50%;
+                    width: 33%;
                     border: none;
                     background: transparent;
                     display: flex;
                     flex-direction: row;
-                    margin: 0.2em;
+                    border-right: 1px solid;
+                    align-items: center;
+                    flex-flow: column-reverse;
                     .header__upper__info_image {
-                        height: auto;
                         margin: 0em 0.5em;
+                        height: 100%;
+                        width: 15%;
+                        overflow: auto;
                     }
                 }
             }   
@@ -89,6 +94,7 @@
                 width: 100%;
                 justify-content: flex-end;
                 margin: 0;
+                align-items: center;
                 li {
                     width: 16.6%;
                     a {
