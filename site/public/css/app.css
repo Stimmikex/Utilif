@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
 .header__add__upper {
   background: #a90909c7;
 }
@@ -88,7 +94,7 @@
 .header__container .header .header__upper {
   display: -webkit-box;
   display: flex;
-  width: 100% !important;
+  width: 100%;
   height: 50%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
