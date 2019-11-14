@@ -31,12 +31,12 @@
                         </a>
                     </div>
                     <ul class="header__lower_ul" id="menuhead">
-                        <li><a href="testing.php" class="btn btn-default">Útivist</a></li>
-                        <li><a href="" class="btn btn-default">Sund</a></li>
-                        <li><a href="" class="btn btn-default">Skór</a></li>
-                        <li><a href="" class="btn btn-default">Íþróttarfatnaður</a></li>
-                        <li><a href="" class="btn btn-default">Skíðavörur</a></li>
-                        <li><a href="" class="btn btn-default">Tilboðsvörur</a></li>
+                        <li><a href="{{ route('utivist') }}" class="btn btn-default">Útivist</a></li>
+                        <li><a href="{{ route('sund') }}" class="btn btn-default">Sund</a></li>
+                        <li><a href="{{ route('skor') }}" class="btn btn-default">Skór</a></li>
+                        <li><a href="{{ route('ithrottir') }}" class="btn btn-default">Íþróttarfatnaður</a></li>
+                        <li><a href="{{ route('skidi') }}" class="btn btn-default">Skíðavörur</a></li>
+                        <li><a href="{{ route('tilbod') }}" class="btn btn-default">Tilboðsvörur</a></li>
                         <div class="header__lower_ul__div">
                             <a href="pages/info.php" class="btn btn-default">Info<img src="/img/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
                             <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
