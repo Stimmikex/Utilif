@@ -53,7 +53,7 @@
         }
         .header__upper {
             display: flex;
-            width: 100%;
+            width: 100% !important;
             height: 50%;
             flex-direction: row;
             justify-content: space-between;
@@ -78,7 +78,7 @@
                     background: #ff8d8d;
                     img {
                         height: 100%;
-                        width: auto;
+                       // width: auto;
                     }
                 }
             }
@@ -192,6 +192,7 @@
                         width: 100%;
                         border-bottom: 1px solid;
                         img {
+                            height: 100%;
                             width: auto;
                             margin: 0em 0.5em
                         }
@@ -200,7 +201,7 @@
             }
         }
     }
-    img {
+    .headerIcon {
         width: 50%;
         @media (min-width: 600px) {
             width: auto;

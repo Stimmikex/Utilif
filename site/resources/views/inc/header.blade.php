@@ -8,7 +8,7 @@
 </div>
 <div class="header__color">
     <div class="header__container">
-            <img src="img/sitelogo.png" alt="">
+            <img src="img/sitelogo.png" alt="" class="headerIcon">
             <div class="header">
                 <!--Div Search bar-->
                 <div class="header__upper">

@@ -88,7 +88,7 @@
 .header__container .header .header__upper {
   display: -webkit-box;
   display: flex;
-  width: 100%;
+  width: 100% !important;
   height: 50%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -127,7 +127,6 @@
 
 .header__container .header .header__upper .header__upper__search button img {
   height: 100%;
-  width: auto;
 }
 
 .header__container .header .header__upper .header__upper__info {
@@ -289,17 +288,18 @@
 }
 
 .header__container .header .header__lower .header__lower_ul .header__lower_ul__div a img {
+  height: 100%;
   width: auto;
   margin: 0em 0.5em;
 }
 
-.header__container img {
+.header__container .headerIcon {
   width: 50%;
   height: 100%;
 }
 
 @media (min-width: 600px) {
-  .header__container img {
+  .header__container .headerIcon {
     width: auto;
   }
 }
