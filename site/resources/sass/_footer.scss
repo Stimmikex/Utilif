@@ -6,19 +6,20 @@
     background: yellowgreen;
     .footer__upper {
         display: flex;
+        flex-direction: column;
         width: 100%;
         height: 70%;
         background: bisque;
         .footer__upper__left {
             display: flex;
             height: 100%;
-            width: 33.3%;
+            width: 100%;
             background: rebeccapurple;
         }
         .footer__upper__center {
             display: flex;
             height: 100%;
-            width: 33%;
+            width: 100%;
             .footer__upper__center__left {
                 display: flex;
                 height: 100%;
@@ -41,7 +42,7 @@
         .footer__upper__right {
             display: flex;
             height: 100%;
-            width: 33.3%;
+            width: 100%;
             background: grey;
         }
     }

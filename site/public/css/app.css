@@ -126,7 +126,6 @@
 
 .header__container .header .header__upper .header__upper__search button img {
   height: 100%;
-  width: 100%;
 }
 
 .header__container .header .header__upper .header__upper__info {
@@ -320,6 +319,9 @@
 .footer .footer__upper {
   display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   width: 100%;
   height: 70%;
   background: bisque;
@@ -329,7 +331,7 @@
   display: -webkit-box;
   display: flex;
   height: 100%;
-  width: 33.3%;
+  width: 100%;
   background: rebeccapurple;
 }
 
@@ -337,7 +339,7 @@
   display: -webkit-box;
   display: flex;
   height: 100%;
-  width: 33%;
+  width: 100%;
 }
 
 .footer .footer__upper .footer__upper__center .footer__upper__center__left {
@@ -368,7 +370,7 @@
   display: -webkit-box;
   display: flex;
   height: 100%;
-  width: 33.3%;
+  width: 100%;
   background: grey;
 }
 

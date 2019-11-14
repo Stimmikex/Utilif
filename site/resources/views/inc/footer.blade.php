@@ -15,15 +15,23 @@
             </div>
         </div>
         <div class="footer__upper__right">
-
+            <p>about info</p>
         </div>
     </div>
     <div class="footer__lower">
         <div class="footer__lower__level1">
-
+            <div>
+                <p>Contact 1</p>
+            </div>
+            <div>
+                <p>contact 2</p>
+            </div>
+            <div>
+                <p>contact 3</p>
+            </div>
         </div>
         <div class="footer__lower__level2">
-
+            <p>maker banner</p>
         </div>
     </div>
 </div>
