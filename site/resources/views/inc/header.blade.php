@@ -11,9 +11,10 @@
             <img src="img/sitelogo.png" alt="" class="headerIcon">
             <div class="header">
                 <!--Div Search bar-->
-                <div class="header__upper">
+                <div class="header__upper" id="MyCode" onload="FixMyCode()">
                     <div class="header__upper__search">
                         <input type="text">
+                        <!-- /img/searchIcon.png -->
                         <button><img src="/img/searchIcon.png" alt="searchimage"></button>
                     </div>
                     <!--Div Cart and Info-->
@@ -59,5 +60,12 @@
             x.style.zIndex = 1;
             x.style.display = "flex";
         }
+    }
+    function GodDamn() {
+        document.getElementById("MyCode").style.width = "";
+        document.getElementById("MyCode").style.width = "100%";
+    }
+    function FixMyCode() {
+        setTimeout(GodDamn(), 1000);
     }
 </script>

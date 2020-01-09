@@ -64,6 +64,7 @@ body, html {
             .header__upper__search {
                 display: flex;
                 width: 100%;
+                flex-flow: row;
                 margin: 0.3em 1em;
                 @media (min-width: 1000px) {
                     width: 50%;
@@ -82,7 +83,10 @@ body, html {
                     background: #ff8d8d;
                     img {
                         height: 100%;
-                       // width: auto;
+                        display: none;
+                        @media (min-width: 600px) {
+                            display: flex;
+                        }
                     }
                 }
             }

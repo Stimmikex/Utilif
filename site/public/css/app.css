@@ -107,6 +107,9 @@ html {
   display: -webkit-box;
   display: flex;
   width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row;
   margin: 0.3em 1em;
 }
 
@@ -133,6 +136,14 @@ html {
 
 .header__container .header .header__upper .header__upper__search button img {
   height: 100%;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header__container .header .header__upper .header__upper__search button img {
+    display: -webkit-box;
+    display: flex;
+  }
 }
 
 .header__container .header .header__upper .header__upper__info {
