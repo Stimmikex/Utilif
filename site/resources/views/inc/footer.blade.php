@@ -5,7 +5,7 @@
         </div>
         <div class="footer__upper__center">
             <div class="footer__upper__center__left">
-
+                <p>My Account</p>
             </div>
             <div class="footer__upper__center__center">
 

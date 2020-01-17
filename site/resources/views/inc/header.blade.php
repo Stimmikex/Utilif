@@ -7,7 +7,7 @@
     </ul>
 </div>
 <div class="header__color">
-    <div class="header__container">
+    <div class="header__container" id="header__container">
             <img src="img/sitelogo.png" alt="" class="headerIcon">
             <div class="header">
                 <!--Div Search bar-->
@@ -27,7 +27,7 @@
                 <!--Div category-->
                 <div class="header__lower">
                     <div class="header__lower__div">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <a href="javascript:void(0);" class="icon" onclick="displayHead()">
                             <i class="fa fa-bars"><img src="/img/hamIcon.png" alt="hamburgermenu Icon"></i>
                         </a>
                     </div>
@@ -52,7 +52,7 @@
     <p>here are some cool things</p>
 </div>
 <script>
-    function myFunction() {
+    function displayHead() {
         var x = document.getElementById("menuhead");
         if (x.style.display === "flex") {
             x.style.display = "none";
@@ -68,4 +68,18 @@
     function FixMyCode() {
         setTimeout(GodDamn(), 1000);
     }
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header__container");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 </script>

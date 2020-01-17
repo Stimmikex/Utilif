@@ -331,13 +331,40 @@ html {
   color: white;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  margin: auto;
+  height: 7em;
+}
+
+.sticky .headerIcon {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .sticky {
+    width: 70%;
+    margin: 0em 15%;
+  }
+}
+
+@media (min-width: 600px) {
+  .sticky .headerIcon {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 20em;
+  height: 30em;
   width: 100%;
   background: yellowgreen;
 }
