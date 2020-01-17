@@ -39,6 +39,15 @@
                         <li><a href="{{ route('skidi') }}" class="btn btn-default">Skíðavörur</a></li>
                         <li><a href="{{ route('tilbod') }}" class="btn btn-default">Tilboðsvörur</a></li>
                         <div class="header__lower_ul__div">
+                            <div class="btn btn-default" id="tester">
+                                <p class="header__lower_ul__div__div__text">Testing</p>
+                                <p onclick="displayUlList()" class="header__lower_ul__div__div__down">+</p>
+                                <ul class="header__lower_ul__div_ul" id="DUL">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
                             <a href="pages/info.php" class="btn btn-default">Info<img src="/img/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
                             <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
                             <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
@@ -67,6 +76,15 @@
     }
     function FixMyCode() {
         setTimeout(GodDamn(), 1000);
+    }
+    function displayUlList() {
+        var x = document.getElementById("DUL");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.zIndex = 2;
+            x.style.display = "flex";
+        }
     }
 </script>
 <script>

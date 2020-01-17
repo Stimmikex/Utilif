@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    height: 30em;
+    height: 100%;
     width: 100%;
     background: yellowgreen;
     .footer__upper {
@@ -41,9 +41,20 @@
         }
         .footer__upper__right {
             display: flex;
+            flex-direction: column;
             height: 100%;
             width: 100%;
             background: grey;
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                input {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
         }
     }
     .footer__lower {

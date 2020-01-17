@@ -8,26 +8,30 @@
                 <p>My Account</p>
             </div>
             <div class="footer__upper__center__center">
-
+                <p>About</p>
             </div>
             <div class="footer__upper__center__right">
-
+                <p>Info</p>
             </div>
         </div>
         <div class="footer__upper__right">
-            <p>about info</p>
+            <p>New Letter</p>
+            <form action="">
+                <input type="text">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </form>
         </div>
     </div>
     <div class="footer__lower">
         <div class="footer__lower__level1">
             <div>
-                <p>Contact 1</p>
+                <p>Phone</p>
             </div>
             <div>
-                <p>contact 2</p>
+                <p>Chat</p>
             </div>
             <div>
-                <p>contact 3</p>
+                <p>Social</p>
             </div>
         </div>
         <div class="footer__lower__level2">

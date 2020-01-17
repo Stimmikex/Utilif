@@ -205,6 +205,12 @@ body, html {
                             margin: 0em 0.5em
                         }
                     }
+                    .header__lower_ul__div_ul {
+                        text-decoration: none;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -244,4 +250,29 @@ body, html {
             display: flex;
         }
     }
-}  
+} 
+#tester {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: solid 1px black;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .header__lower_ul__div__div__text {
+        width: 90%;
+    }
+    .header__lower_ul__div__div__down {
+        width: 10%;
+        border-left: solid 1px black;
+    }
+    ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+}
