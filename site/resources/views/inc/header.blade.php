@@ -8,27 +8,27 @@
 </div>
 <div class="header__color">
     <div class="header__container" id="header__container">
-            <img src="img/sitelogo.png" alt="" class="headerIcon">
+            <img src="img/header/sitelogo.png" alt="" class="headerIcon">
             <div class="header">
                 <!--Div Search bar-->
                 <div class="header__upper" id="MyCode" onload="FixMyCode()">
                     <div class="header__upper__search">
                         <input type="text">
                         <!-- /img/searchIcon.png -->
-                        <button><img src="/img/searchIcon.png" alt="searchimage"></button>
+                        <button><img src="/img/header/searchIcon.png" alt="searchimage"></button>
                     </div>
                     <!--Div Cart and Info-->
                     <div class="header__upper__info">
-                        <a href="pages/info.php" class="btn btn-default">Info<img src="/img/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
-                        <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
-                        <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
+                        <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
+                        <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
+                        <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
                     </div>
                 </div>
                 <!--Div category-->
                 <div class="header__lower">
                     <div class="header__lower__div">
                         <a href="javascript:void(0);" class="icon" onclick="displayHead()">
-                            <i class="fa fa-bars"><img src="/img/hamIcon.png" alt="hamburgermenu Icon"></i>
+                            <i class="fa fa-bars"><img src="/img/header/hamIcon.png" alt="hamburgermenu Icon"></i>
                         </a>
                     </div>
                     <ul class="header__lower_ul" id="menuhead">
@@ -48,9 +48,9 @@
                                     <li>3</li>
                                 </ul>
                             </div>
-                            <a href="pages/info.php" class="btn btn-default">Info<img src="/img/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
-                            <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
-                            <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
+                            <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
+                            <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
+                            <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
                         </div>
                     </ul>
                 </div>    

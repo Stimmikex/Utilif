@@ -3,8 +3,10 @@
     @include('../inc/header')
 </header>
 <div class="content">
-    <div>
-        <p>testing</p>
+    <div class="content__brandLogos">
+        @foreach ($brands as $b)
+            <img src="img/BrandLogos/{{$b->brandLogo}}" alt="">   
+        @endforeach
     </div>
 </div>
 <footer>

@@ -15,37 +15,18 @@
 storePages => PATH
 -------------------------------------------------
 */
-Route::get('utivist', 'storePagesController@utivist')->name('utivist');
+// Route::get('utivist', 'storePagesController@utivist')->name('utivist');
+Route::get('utivist', 'BrandController@list')->name('utivist');
 
-Route::get('sund', 'storePagesController@utivist')->name('sund');
+Route::get('sund', 'storePagesController@sund')->name('sund');
 
-Route::get('skor', 'storePagesController@utivist')->name('skor');
+Route::get('skor', 'storePagesController@skor')->name('skor');
 
-Route::get('ithrottir', 'storePagesController@utivist')->name('ithrottir');
+Route::get('ithrottir', 'storePagesController@ithrottir')->name('ithrottir');
 
-Route::get('skidi', 'storePagesController@utivist')->name('skidi');
+Route::get('skidi', 'storePagesController@skidi')->name('skidi');
 
-Route::get('tilbod', 'storePagesController@utivist')->name('tilbod');
-
-// Route::get('Sund', function() {
-//     return view('storePages/sund');
-// });
-
-// Route::get('Skór', function() {
-//     return view('storePages/skor');
-// });
-
-// Route::get('Íþróttarfatnaður', function() {
-//     return view('storePages/ithrottir');
-// });
-
-// Route::get('Skíðavörur', function() {
-//     return view('storePages/skidi');
-// });
-
-// Route::get('Tilboðsvörur', function() {
-//     return view('storePages/tilbod');
-// });
+Route::get('tilbod', 'storePagesController@tilbod')->name('tilbod');
 
 /*
 -------------------------------------------------
