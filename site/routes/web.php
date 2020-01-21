@@ -28,6 +28,9 @@ Route::get('skidi', 'storePagesController@skidi')->name('skidi');
 
 Route::get('tilbod', 'storePagesController@tilbod')->name('tilbod');
 
+//Route::get('footer', 'openHController@store');
+//Route::get('{any}', 'BaseController@__construct')->where('any', '.*');
+
 /*
 -------------------------------------------------
 inc => PATH

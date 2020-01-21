@@ -2,6 +2,16 @@
     <div class="footer__upper">
         <div class="footer__upper__left">
             <p>Opening Hours</p>
+            {{-- @foreach ($stores as $s)
+                <h2>{{$s->name}}</h2>
+                <div>
+                    <ul>
+                        {{-- @foreach ($opens as $o)
+                            <li>{{$o->day}} : {{$o->time}}</li>   
+                        @endforeach 
+                    </ul>
+                </div>
+            @endforeach --}}
             <h2>Store 1</h2>
             <div>
                 <p>Week days</p>

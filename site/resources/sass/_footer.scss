@@ -4,21 +4,28 @@
     flex-direction: column;
     height: auto;
     width: 100%;
+    background: #ee7379;
     div {
-        border-bottom: solid 1px black;
+        //border-bottom: solid 1px black;
     }
     .footer__upper {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 70%;
-        //background: bisque;
+        @media (min-width: 1000px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         .footer__upper__left {
             display: flex;
             flex-direction: column;
             height: 100%;
             width: 100%;
             background: #ec1d27;
+            @media (min-width: 1000px) {
+                width: 33.3%;
+            }
             div {
                 display: flex;
                 justify-content: space-around;
@@ -33,6 +40,10 @@
             height: auto;
             width: 100%;
             background: #f64c54;
+            @media (min-width: 1000px) {
+                width: 33.4%;
+                align-items: center;
+            }
             div {
                 padding: 2em;
             }
@@ -65,6 +76,9 @@
             width: 100%;
             padding: 1em;
             background: #ee7379;
+            @media (min-width: 1000px) {
+                width: 33.3%;
+            }
             form {
                 display: flex;
                 flex-wrap: wrap;
@@ -82,7 +96,6 @@
         display: flex;
         width: 100%;
         height: 10em;
-        //background: blueviolet;
         flex-direction: column;
         .footer__lower__level1 {
             display: flex;
@@ -91,6 +104,9 @@
             background: #f4a4a8;
             justify-content: space-between;
             padding: 2em;
+            @media (min-width: 1000px) {
+                justify-content: space-around;
+            }
             img {
                 height: 70%;
                 width: auto;
@@ -105,8 +121,4 @@
             background: brown;
         }
     }
-    @media (min-width: 1000px) {
-        flex-direction: row;
-    }
-
 }
