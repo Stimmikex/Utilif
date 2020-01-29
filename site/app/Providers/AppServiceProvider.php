@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use DB;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $stores = DB::select('select * from stores');
+        $opens = DB::select('select * from opens');
+        view()->share('stores', $stores);
+        view()->share('opens', $opens);
     }
 }

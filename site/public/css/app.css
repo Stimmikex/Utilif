@@ -447,6 +447,7 @@ html {
 @media (min-width: 1000px) {
   .footer .footer__upper .footer__upper__left {
     width: 33.3%;
+    height: auto;
   }
 }
 

@@ -2,48 +2,18 @@
     <div class="footer__upper">
         <div class="footer__upper__left">
             <p>Opening Hours</p>
-            {{-- @foreach ($stores as $s)
+            @foreach ($stores as $s)
                 <h2>{{$s->name}}</h2>
                 <div>
                     <ul>
-                        {{-- @foreach ($opens as $o)
-                            <li>{{$o->day}} : {{$o->time}}</li>   
+                        @foreach ($opens as $o)
+                            @if ($s->id == $o->store_id)
+                                <li>{{$o->day}} : {{$o->time}}</li> 
+                            @endif  
                         @endforeach 
                     </ul>
                 </div>
-            @endforeach --}}
-            <h2>Store 1</h2>
-            <div>
-                <p>Week days</p>
-                <ul>
-                    <li>11:00 - 19:00</li>
-                    <li>11:00 - 19:00</li>
-                    <li>11:00 - 19:00</li>
-                    <li>11:00 - 21:00</li>
-                    <li>11:00 - 19:00</li>
-                </ul>
-                <p>Weekends</p>
-                <ul>
-                    <li>11:00 - 18:00</li>
-                    <li>12:30 - 18:00</li>
-                </ul>
-            </div>
-            <h2>Store 2</h2>
-            <div>
-                <p>Week days</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <p>Weekends</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            @endforeach
         </div>
         <div class="footer__upper__center">
             <div class="footer__upper__center__left">
