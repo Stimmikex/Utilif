@@ -1,2 +1,2 @@
-cd C:\xampp\htdocs\Utilif\site
+cd C:\newXampp\htdocs\Git\Utilif\site
 npm run dev
