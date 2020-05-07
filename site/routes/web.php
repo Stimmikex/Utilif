@@ -15,8 +15,8 @@
 storePages => PATH
 -------------------------------------------------
 */
-// Route::get('utivist', 'storePagesController@utivist')->name('utivist');
-Route::get('utivist', 'BrandController@list')->name('utivist');
+//Route::get('utivist', 'storePagesController@utivist')->name('utivist');
+Route::get('utivist', 'ItemController@img')->name('utivist');
 
 Route::get('sund', 'storePagesController@sund')->name('sund');
 

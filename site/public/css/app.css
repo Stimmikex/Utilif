@@ -588,17 +588,19 @@ html {
 .content {
   min-height: 85%;
   margin: 0 auto -50px;
-  padding: 2em 15%;
+  padding: 2em 0em;
 }
 
 .content__brandLogos {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: solid black;
 }
 
 .content__brandLogos img {
-  width: 100%;
+  width: 50%;
 }
 
 /*!

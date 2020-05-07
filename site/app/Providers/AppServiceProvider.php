@@ -25,8 +25,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $stores = DB::select('select * from stores');
-        $opens = DB::select('select * from opens');
         view()->share('stores', $stores);
+        
+        $opens = DB::select('select * from opens');
         view()->share('opens', $opens);
+
+        $itemImages = DB::select('select * from item_images');
+        view()->share('itemImages', $itemImages);
+
+        $item = DB::select('select * from item');
+        view()->share('item', $item);
+
+        $brands = DB::select('select * from brands');
+        view()->share('brands', $brands);
     }
 }
