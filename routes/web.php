@@ -17,17 +17,13 @@ storePages => PATH
 */
 //Route::get('utivist', 'storePagesController@utivist')->name('utivist');
 
-Route::get('utivist', 'ItemController')->name('utivist');
+Route::get('Repair', 'ItemController@repair')->name('Repair');
 
-Route::get('sund', 'storePagesController@sund')->name('sund');
+Route::get('Skis', 'ItemController@skis')->name('Skis');
 
-Route::get('skor', 'storePagesController@skor')->name('skor');
+Route::get('Outdoor', 'ItemController@outdoors')->name('Outdoor');
 
-Route::get('ithrottir', 'storePagesController@ithrottir')->name('ithrottir');
-
-Route::get('skidi', 'storePagesController@skidi')->name('skidi');
-
-Route::get('tilbod', 'storePagesController@tilbod')->name('tilbod');
+Route::get('Bikes', 'ItemController@bikes')->name('Bikes');
 
 //Route::get('footer', 'openHController');
 
@@ -36,19 +32,20 @@ Route::get('tilbod', 'storePagesController@tilbod')->name('tilbod');
 inc => PATH
 -------------------------------------------------
 */
-Route::resource('footer', 'openHController@store');
 
 // Route::get('header', function() {
 //     return view('inc/header');
 // });
+
+Route::get('Skis/{item}', 'ItemController@skis')->name('Skis/Item');
 
 /*
 -------------------------------------------------
 / => PATH
 -------------------------------------------------
 */
-Route::get('/', 'HomeController@welcome')->name('Welcome');
+Route::get('/', 'ItemController@index')->name('Welcome');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'ItemController@index')->name('Welcome Back');

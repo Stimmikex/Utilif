@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     border-bottom: solid black;
+    margin-bottom: 1em;
     img {
-        width: 25%;
+        padding: 1em;
+        height: 100px;
     }
 }

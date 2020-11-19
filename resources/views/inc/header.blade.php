@@ -19,9 +19,9 @@
                     </div>
                     <!--Div Cart and Info-->
                     <div class="header__upper__info">
-                        <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
-                        <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
-                        <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
+                        <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.svg" alt="info image" class="header__upper__info_image"></a>
+                        <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
+                        <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.svg" alt="account image" class="header__upper__info_image"></a>
                     </div>
                 </div>
                 <!--Div category-->
@@ -32,12 +32,10 @@
                         </a>
                     </div>
                     <ul class="header__lower_ul" id="menuhead">
-                        <li><a href="{{ route('utivist') }}" class="btn btn-default">Útivist</a></li>
-                        <li><a href="{{ route('sund') }}" class="btn btn-default">Sund</a></li>
-                        <li><a href="{{ route('skor') }}" class="btn btn-default">Skór</a></li>
-                        <li><a href="{{ route('ithrottir') }}" class="btn btn-default">Íþróttarfatnaður</a></li>
-                        <li><a href="{{ route('skidi') }}" class="btn btn-default">Skíðavörur</a></li>
-                        <li><a href="{{ route('tilbod') }}" class="btn btn-default">Tilboðsvörur</a></li>
+                        <li><a href="{{ route('Skis') }}" class="btn btn-default">Skis</a></li>
+                        <li><a href="{{ route('Repair') }}" class="btn btn-default">Repair</a></li>
+                        <li><a href="{{ route('Outdoor') }}" class="btn btn-default">Outdoor</a></li>
+                        <li><a href="{{ route('Bikes') }}" class="btn btn-default">Bikes</a></li>
                         <div class="header__lower_ul__div">
                             <div class="btn btn-default" id="tester">
                                 <p class="header__lower_ul__div__div__text">Testing</p>
@@ -48,9 +46,9 @@
                                     <li>3</li>
                                 </ul>
                             </div>
-                            <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.png" alt="info image" class="header__upper__info_image"></a>
-                            <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.png" alt="cart image" class="header__upper__info_image"></a>
-                            <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.png" alt="account image" class="header__upper__info_image"></a>
+                            <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.svg" alt="info image" class="header__upper__info_image"></a>
+                            <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
+                            <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.svg" alt="account image" class="header__upper__info_image"></a>
                         </div>
                     </ul>
                 </div>    

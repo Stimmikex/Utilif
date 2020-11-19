@@ -4,7 +4,7 @@
 </header>
 <div class="content">
     <div>
-        <p>cart</p>
+        <p>testing</p>
     </div>
 </div>
 <footer>

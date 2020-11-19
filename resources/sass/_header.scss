@@ -26,7 +26,6 @@ body, html {
     background: $headerMainColor;
     display: flex;
     // width: 100%;
-    height: 15em;
     @media (min-width: 600px) {
         height: 7em;
     }
@@ -48,12 +47,13 @@ body, html {
     .header {
         display: flex;
         flex-direction: column;
-        height: 7em;
+        height: 6em;
         width: 100%;
         margin-bottom: 1em;
         padding-top: 5px;
         @media (min-width: 600px) {
             //width: 80%;
+            height: 100%;
             padding-bottom: 0em;
             margin-bottom: 0em;   
         }
@@ -104,15 +104,13 @@ body, html {
                     border: none;
                     border-radius: inherit;
                     background: transparent;
-                    display: flex;
                     flex-direction: row;
                     border-right: 1px solid;
                     align-items: center;
                     flex-flow: column-reverse;
                     .header__upper__info_image {
                         margin: 0em 0.5em;
-                        height: 100%;
-                        width: 15%;
+                        height: 75%;
                         overflow: auto;
                     }
                 }
@@ -238,7 +236,7 @@ body, html {
     width: 100%;
     height: inherit;
     margin: auto;
-    height: 7em;
+    height: 6em;
     .headerIcon {
         display: none;
     }
