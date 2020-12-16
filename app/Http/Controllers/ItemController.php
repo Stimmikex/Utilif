@@ -9,14 +9,6 @@ use App\Http\Controllers\Controller;
 
 class ItemController extends Controller
 {
-    public function __invoke() {
-        $itemImages = DB::select('select * from item_images');
-        $brands = DB::select('select * from brands');
-        $items = DB::select('select * from item');
-        $types = DB::select('select * from types');
-        return view ('storePages.utivist', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
-    }
-
     public function skis() {
         $itemImages = DB::select('select * from item_images');
         $brands = DB::select('select * from brands');
@@ -55,5 +47,13 @@ class ItemController extends Controller
         $items = DB::select('select * from item');
         $types = DB::select('select * from types');
         return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+    }
+
+    public function item() {
+        $itemImages = DB::select('select * from item_images');
+        $brands = DB::select('select * from brands');
+        $items = DB::select('select * from item');
+        $types = DB::select('select * from types');
+        return view ('storePages.itemTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
     }
 }

@@ -46,6 +46,25 @@ Route::get('Skis/{item}', 'ItemController@skis')->name('Skis/Item');
 */
 Route::get('/', 'ItemController@index')->name('Welcome');
 
+Route::get('/welcome', 'HomeController@welcome')->name('Welcome2');
+
 Auth::routes();
 
+Route::get('/Product/{item}', 'ItemController@item');
+
 Route::get('/home', 'ItemController@index')->name('Welcome Back');
+
+Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
+
+/*
+-------------------------------------------------
+/ => Cart
+-------------------------------------------------
+*/
+Route::get('/cart', 'ProductsController@cart')->name('cart');
+
+Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
+
+Route::patch('update-cart', 'ProductsController@update');
+
+Route::delete('remove-from-cart', 'ProductsController@remove');

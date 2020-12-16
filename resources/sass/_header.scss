@@ -1,6 +1,7 @@
 body, html {
     width: 100%;
     height: 100%;
+    font-family: $font-family-sans-serif;
 }
 .header__add__upper{
     background: $headerSocialColor;
@@ -231,6 +232,7 @@ body, html {
     }
 }
 .sticky {
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;

@@ -1,11 +1,10 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <header>
     @include('../inc/header')
 </header>
 <div class="content">
     <div class="content__brandLogos">
         @foreach ($brands as $b)
-            <img src="img/BrandLogos/{{$b->brandLogo}}" alt="">   
+            <img src="/img/BrandLogos/{{$b->brandLogo}}" alt="">   
         @endforeach
     </div>
     <div class="content__items">
@@ -14,7 +13,7 @@
             @foreach ($itemImages as $img)
                 @if ($itemsChecker->id == $img->item_id)
                     <div class="content__items-item">
-                        <a href="">
+                        <a href="{{'Product/'.$itemsChecker->name}}">
                         <img src="{{$img->img}}" alt="">
                         @if ($img->item_id == $itemsChecker->id)
                         <div class="content__items-item-info">
@@ -24,7 +23,7 @@
                         <div class="content__items-item-tags">
                             @foreach ($brands as $brand)
                                 @if ($brand->id == $itemsChecker->brand_id)
-                                    <img src="img/BrandLogos/{{$brand->brandLogo}}" alt="">  
+                                    <img src="/img/BrandLogos/{{$brand->brandLogo}}" alt="">  
                                 @endif
                             @endforeach
                             @foreach ($types as $type)
@@ -33,8 +32,8 @@
                                 @endif
                             @endforeach
                         </div>
-                    @endif
-                    </a>
+                        @endif
+                        </a>
                     </div>
                 @endif
             @endforeach

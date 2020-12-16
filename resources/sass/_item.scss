@@ -1,0 +1,29 @@
+.item {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .item__container {
+        margin: 1em;
+        img {
+            width: 100%;
+        }
+        .item__container-item-info {
+            display: flex;
+            flex-direction: column;
+            height: 10em;
+            border: solid;
+            margin-bottom: 1em;
+            img {
+                width: 20%;
+                height: auto;
+            }
+        }
+        .item__container-item-tags {
+
+        }
+
+        .item__container-item-image {
+            margin-bottom: 2em;
+        }
+    }
+}

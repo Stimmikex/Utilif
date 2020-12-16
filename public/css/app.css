@@ -4,6 +4,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  font-family: "Nunito", sans-serif;
 }
 
 .header__add__upper {
@@ -297,6 +298,7 @@ html {
 }
 
 .sticky {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -578,6 +580,37 @@ html {
 .content__brandLogos img {
   padding: 1em;
   height: 100px;
+}
+
+.item {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item .item__container {
+  margin: 1em;
+}
+
+.item .item__container img {
+  width: 100%;
+}
+
+.item .item__container .item__container-item-info {
+  display: flex;
+  flex-direction: column;
+  height: 10em;
+  border: solid;
+  margin-bottom: 1em;
+}
+
+.item .item__container .item__container-item-info img {
+  width: 20%;
+  height: auto;
+}
+
+.item .item__container .item__container-item-image {
+  margin-bottom: 2em;
 }
 
 /*!

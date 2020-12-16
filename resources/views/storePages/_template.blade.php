@@ -1,4 +1,3 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <header>
     @include('../inc/header')
 </header>

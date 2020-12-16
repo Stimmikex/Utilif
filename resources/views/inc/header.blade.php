@@ -1,3 +1,9 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+</head>
 <div class="header__add__upper">
     <ul class="header__add__upper__ul">
         <li><a href="#" class="btn btn-default">Facebook</a></li>
@@ -8,7 +14,7 @@
 </div>
 <div class="header__color" id="header__color">
     <div class="header__container">
-            <img src="img/header/sitelogo.png" alt="" class="headerIcon">
+            <img src="/img/header/sitelogo.png" alt="" class="headerIcon">
             <div class="header">
                 <!--Div Search bar-->
                 <div class="header__upper" id="MyCode" onload="FixMyCode()">
@@ -20,7 +26,7 @@
                     <!--Div Cart and Info-->
                     <div class="header__upper__info">
                         <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.svg" alt="info image" class="header__upper__info_image"></a>
-                        <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
+                        <a href="/cart" class="btn btn-default">Cart ({{ count((array) session('cart')) }}) <img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
                         <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.svg" alt="account image" class="header__upper__info_image"></a>
                     </div>
                 </div>
@@ -47,7 +53,7 @@
                                 </ul>
                             </div>
                             <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.svg" alt="info image" class="header__upper__info_image"></a>
-                            <a href="pages/cart.php" class="btn btn-default">Cart<img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
+                            <a href="/cart" class="btn btn-default">Cart ({{ count((array) session('cart')) }}) <img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
                             <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.svg" alt="account image" class="header__upper__info_image"></a>
                         </div>
                     </ul>

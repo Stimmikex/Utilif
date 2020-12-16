@@ -6,15 +6,15 @@
         <div class="footer__upper__center">
             <div class="footer__upper__center__left">
                 <p>My Account</p>
-                <img src="img/footer/accountIcon.png" alt="">
+                <img src="/img/footer/accountIcon.png" alt="">
             </div>
             <div class="footer__upper__center__center">
                 <p>About</p>
-                <img src="img/footer/deliIcon.jpg" alt="">
+                <img src="/img/footer/deliIcon.jpg" alt="">
             </div>
             <div class="footer__upper__center__right">
                 <p>Info</p>
-                <img src="img/footer/jobIcon.png" alt="">
+                <img src="/img/footer/jobIcon.png" alt="">
             </div>
         </div>
         <div class="footer__upper__right">
@@ -30,15 +30,15 @@
     <div class="footer__lower">
         <div class="footer__lower__level1">
             <div>
-                <img src="img/footer/phoneIcon.png" alt="">
+                <img src="/img/footer/phoneIcon.png" alt="">
                 <p>Phone</p>
             </div>
             <div>
-                <img src="img/footer/chatIcon.png" alt="">
+                <img src="/img/footer/chatIcon.png" alt="">
                 <p>Chat</p>
             </div>
             <div>
-                <img src="img/footer/instaIcon.png" alt="">
+                <img src="/img/footer/instaIcon.png" alt="">
                 <p>Social</p>
             </div>
         </div>
