@@ -51,6 +51,10 @@ html {
   align-items: center;
 }
 
+.header__container a {
+  width: 100%;
+}
+
 @media (min-width: 1320px) {
   .header__container {
     margin: 0em 15%;
@@ -247,8 +251,14 @@ html {
   color: black;
 }
 
-.header__container .header .header__lower .header__lower_ul li:last-child {
-  border-right: 0;
+@media (min-width: 1000px) {
+  .header__container .header .header__lower .header__lower_ul li:last-child {
+    border-right: 0;
+  }
+}
+
+.header__container .header .header__lower .header__lower_ul li:first-child {
+  border-left: 1px solid;
 }
 
 .header__container .header .header__lower .header__lower_ul .header__lower_ul__div {

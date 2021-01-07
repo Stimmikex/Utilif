@@ -14,7 +14,7 @@
 </div>
 <div class="header__color" id="header__color">
     <div class="header__container">
-            <img src="/img/header/sitelogo.png" alt="" class="headerIcon">
+            <a href="/"><img src="/img/header/sitelogo.png" alt="" class="headerIcon"></a>
             <div class="header">
                 <!--Div Search bar-->
                 <div class="header__upper" id="MyCode" onload="FixMyCode()">
@@ -38,10 +38,15 @@
                         </a>
                     </div>
                     <ul class="header__lower_ul" id="menuhead">
-                        <li><a href="{{ route('Skis') }}" class="btn btn-default">Skis</a></li>
+                        {{-- <li><a href="{{ route('Skis') }}" class="btn btn-default">Skis</a></li>
                         <li><a href="{{ route('Repair') }}" class="btn btn-default">Repair</a></li>
                         <li><a href="{{ route('Outdoor') }}" class="btn btn-default">Outdoor</a></li>
-                        <li><a href="{{ route('Bikes') }}" class="btn btn-default">Bikes</a></li>
+                        <li><a href="{{ route('Bikes') }}" class="btn btn-default">Bikes</a></li> --}}
+                        <?php
+                            @foreach ($types as $type)
+                                <p>Type: {{$type->name}}</p>  
+                            @endforeach
+                        ?>
                         <div class="header__lower_ul__div">
                             <div class="btn btn-default" id="tester">
                                 <p class="header__lower_ul__div__div__text">Testing</p>
