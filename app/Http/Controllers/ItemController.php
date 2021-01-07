@@ -13,32 +13,36 @@ class ItemController extends Controller
         $itemImages = DB::select('select * from item_images');
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item where type_id = 1');
-        $types = DB::select('select * from types where name = "Skis"');
-        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function repair() {
         $itemImages = DB::select('select * from item_images');
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item where type_id = 2');
-        $types = DB::select('select * from types where name = "Repair"');
-        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function outdoors() {
         $itemImages = DB::select('select * from item_images');
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item where type_id = 3');
-        $types = DB::select('select * from types where name = "Outdoors"');
-        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function bikes() {
         $itemImages = DB::select('select * from item_images');
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item where type_id = 4');
-        $types = DB::select('select * from types where name = "Bikes"');
-        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function index() {
@@ -46,7 +50,8 @@ class ItemController extends Controller
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item');
         $types = DB::select('select * from types');
-        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function item() {
@@ -54,6 +59,7 @@ class ItemController extends Controller
         $brands = DB::select('select * from brands');
         $items = DB::select('select * from item');
         $types = DB::select('select * from types');
-        return view ('storePages.itemTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types]);
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.itemTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
 }

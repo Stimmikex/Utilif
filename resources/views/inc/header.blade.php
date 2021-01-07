@@ -38,15 +38,22 @@
                         </a>
                     </div>
                     <ul class="header__lower_ul" id="menuhead">
-                        {{-- <li><a href="{{ route('Skis') }}" class="btn btn-default">Skis</a></li>
-                        <li><a href="{{ route('Repair') }}" class="btn btn-default">Repair</a></li>
-                        <li><a href="{{ route('Outdoor') }}" class="btn btn-default">Outdoor</a></li>
-                        <li><a href="{{ route('Bikes') }}" class="btn btn-default">Bikes</a></li> --}}
                         <?php
-                            @foreach ($types as $type)
-                                <p>Type: {{$type->name}}</p>  
-                            @endforeach
+                            $counter = 0;
                         ?>
+                        @foreach ($types as $type)
+                            <li onclick="displaySubtypes(this)">
+                                <p class="btn btn-default">{{$type->name}}</p>
+                                <ul class="header__lower_ul-subtypes" id="subtypes">
+                                    <li><a href="{{route($type->name)}}" class="btn btn-default">All</a></li>
+                                    @foreach ($subtypes as $subtype)
+                                        @if ($subtype->type_id == $type->id)
+                                            <li><a href="" class="btn btn-default">{{$subtype->name}}</a></li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </li>
+                        @endforeach
                         <div class="header__lower_ul__div">
                             <div class="btn btn-default" id="tester">
                                 <p class="header__lower_ul__div__div__text">Testing</p>
@@ -88,6 +95,15 @@
         } else {
             x.style.zIndex = 2;
             x.style.display = "flex";
+        }
+    }
+    function displaySubtypes(e) {
+        var x = e.children;
+        if (x[1].style.display === "flex") {
+            x[1].style.display = "none";
+        } else {
+            x[1].style.zIndex = 2;
+            x[1].style.display = "flex";
         }
     }
 </script>

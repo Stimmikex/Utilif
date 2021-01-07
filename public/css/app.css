@@ -51,10 +51,6 @@ html {
   align-items: center;
 }
 
-.header__container a {
-  width: 100%;
-}
-
 @media (min-width: 1320px) {
   .header__container {
     margin: 0em 15%;
@@ -236,11 +232,14 @@ html {
   background: aquamarine;
 }
 
+.header__container .header .header__lower .header__lower_ul li:hover {
+  background-color: chartreuse;
+}
+
 @media (min-width: 1000px) {
   .header__container .header .header__lower .header__lower_ul li {
     width: 16.6%;
     background: transparent;
-    border-right: 1px solid;
     border-bottom: none;
   }
 }
@@ -251,14 +250,20 @@ html {
   color: black;
 }
 
+.header__container .header .header__lower .header__lower_ul li p {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 @media (min-width: 1000px) {
-  .header__container .header .header__lower .header__lower_ul li:last-child {
-    border-right: 0;
+  .header__container .header .header__lower .header__lower_ul li p {
+    height: 60%;
   }
 }
 
-.header__container .header .header__lower .header__lower_ul li:first-child {
-  border-left: 1px solid;
+.header__container .header .header__lower .header__lower_ul li:last-child {
+  border-right: 0;
 }
 
 .header__container .header .header__lower .header__lower_ul .header__lower_ul__div {
@@ -283,6 +288,35 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes {
+  display: none;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  background: aqua;
+}
+
+@media (min-width: 1000px) {
+  .header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes {
+    width: 13.4em;
+    position: absolute;
+  }
+}
+
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes li {
+  width: 100%;
+}
+
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes li a {
+  width: 100%;
+}
+
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes li:hover {
+  background-color: blueviolet;
 }
 
 .header__container .headerIcon {
@@ -370,7 +404,7 @@ html {
   flex-direction: column;
   height: auto;
   width: 100%;
-  background: #ee7379;
+  background: #6cb2eb;
 }
 
 .footer .footer__upper {
@@ -392,7 +426,7 @@ html {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background: #ec1d27;
+  background: #ee7379;
 }
 
 @media (min-width: 1000px) {
@@ -416,7 +450,7 @@ html {
   display: flex;
   height: auto;
   width: 100%;
-  background: #f64c54;
+  background: #ee7379;
 }
 
 @media (min-width: 1000px) {
@@ -458,7 +492,7 @@ html {
   height: 100%;
   width: 100%;
   padding: 1em;
-  background: #ee7379;
+  background: #6cb2eb;
 }
 
 @media (min-width: 1000px) {

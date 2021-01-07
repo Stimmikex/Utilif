@@ -37,9 +37,7 @@ inc => PATH
 //     return view('inc/header');
 // });
 
-Route::any('openHController@index');
-
-Route::get('Skis/{item}', 'ItemController@skis')->name('Skis/Item');
+Route::get('Skis/{catagory}', 'ItemController@item');
 
 /*
 -------------------------------------------------

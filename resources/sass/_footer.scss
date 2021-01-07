@@ -1,10 +1,15 @@
+$footerColor1:  #6cb2eb;
+$footerColor2: #ee7379;
+$footerColor3: #ee7379;
+$footerColor4: #ee7379;
+
 .footer {
     margin-top: 3em;
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background: #ee7379;
+    background: $footerColor1;
     div {
         //border-bottom: solid 1px black;
     }
@@ -22,7 +27,7 @@
             flex-direction: column;
             height: 100%;
             width: 100%;
-            background: #ec1d27;
+            background: $footerColor2;
             @media (min-width: 1000px) {
                 width: 33.3%;
                 height: auto;
@@ -40,7 +45,7 @@
             display: flex;
             height: auto;
             width: 100%;
-            background: #f64c54;
+            background: $footerColor3;
             @media (min-width: 1000px) {
                 width: 33.4%;
                 align-items: center;
@@ -76,7 +81,7 @@
             height: 100%;
             width: 100%;
             padding: 1em;
-            background: #ee7379;
+            background: $footerColor1;
             @media (min-width: 1000px) {
                 width: 33.3%;
             }

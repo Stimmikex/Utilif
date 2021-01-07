@@ -22,8 +22,10 @@ class CreateItemTable extends Migration
             $table->bigInteger('price');
             $table->unsignedBigInteger('type_id');
             $table->unsignedBigInteger('brand_id');
+            $table->unsignedBigInteger('subtype_id');
             $table->foreign('type_id')->references('id')->on('types');
             $table->foreign('brand_id')->references('id')->on('brands');
+            $table->foreign('subtype_id')->references('id')->on('subtypes');
         });
     }
 

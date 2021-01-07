@@ -13,7 +13,9 @@ class ProductsController extends Controller{
 
     public function cart() {
         $itemImages = DB::select('select * from item_images');
-        return view('storePages.cart', ['itemImages' => $itemImages]);
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view('storePages.cart', ['itemImages' => $itemImages, 'types' => $types, 'subtypes' => $subtypes]);
     }
 
     public function addToCart($id) {
