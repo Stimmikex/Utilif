@@ -62,4 +62,24 @@ class ItemController extends Controller
         $subtypes = DB::select('select * from subtypes');
         return view ('storePages.itemTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
     }
+
+    public function category($category) {
+        $subtypesfinder = DB::select('select id from subtypes where name = "'.$category.'"');
+        $finder = $subtypesfinder[0]->id;
+        $itemImages = DB::select('select * from item_images');
+        $brands = DB::select('select * from brands');
+        $items = DB::select('select * from item where subtype_id =  "'.$finder.'"');
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
+    }
+
+    public function findItem($itemName) {
+        $itemImages = DB::select('select * from item_images');
+        $brands = DB::select('select * from brands');
+        $items = DB::select('select * from item where name Like "%'.$itemName.'%"');
+        $types = DB::select('select * from types');
+        $subtypes = DB::select('select * from subtypes');
+        return view ('storePages.storeTemp', ['itemImages' => $itemImages, 'brands' => $brands, 'items' => $items, 'types' => $types, 'subtypes' => $subtypes]);
+    }
 }

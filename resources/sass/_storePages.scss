@@ -2,7 +2,7 @@
     min-height: 85%;
     margin: 0 auto -50px;
     padding: 2em 0em;
-
+    
     &__items {
         display: flex;
         flex-direction: row;
@@ -45,6 +45,20 @@
             &:hover {
                 background-color: $headerBannerColor;
             }
+        }
+    }
+    .content__skiPicker {
+        height: 7em;
+        background-image: url("https://lh3.googleusercontent.com/proxy/NmKGXH-H60_jhOK2Dj0TU3FlCeltRnqDTPSADZ-uIEpcEt-Ro08p68fIUdZ9EkbT0FRTyrB15wHwdAnCBNde-BOg2QX63_vj60j7EEeaKfsoKs3EQhA");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2c2c2c;
+        a {
+            height: 100%;
+            display: block;
+        }
+        a:hover {
+            background-color: #1d68a73b;
         }
     }
 }

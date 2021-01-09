@@ -37,7 +37,12 @@ inc => PATH
 //     return view('inc/header');
 // });
 
-Route::get('Skis/{catagory}', 'ItemController@item');
+Route::get('Skis/{category}', 'ItemController@category');
+
+Route::get('Bikes/{category}', 'ItemController@category');
+
+Route::get('search/{itemName}', 'ItemController@findItem');
+
 
 /*
 -------------------------------------------------

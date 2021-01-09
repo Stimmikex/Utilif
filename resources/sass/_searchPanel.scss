@@ -1,0 +1,21 @@
+.searchPanel__container {
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: gainsboro;
+    .searchPanel__container__sort {
+        width: 50%;
+        display: flex;
+        padding: 1em;
+        p {
+            width: 40%;
+        }
+        select {
+            width: 60%;
+        }
+    }
+    .searchPanel__container__stats {
+        width: 50%;
+        display: flex;
+    }   
+}

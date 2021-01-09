@@ -290,6 +290,21 @@ html {
   padding: 0;
 }
 
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-temp {
+  border-bottom: 1px solid;
+  margin: 0;
+  background-color: forestgreen;
+}
+
+@media (min-width: 1000px) {
+  .header__container .header .header__lower .header__lower_ul .header__lower_ul-temp {
+    border-bottom: 0;
+    margin-inline: auto;
+    height: 100%;
+    background-color: transparent;
+  }
+}
+
 .header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes {
   display: none;
   list-style: none;
@@ -311,6 +326,10 @@ html {
   width: 100%;
 }
 
+.header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes li .header__lower_ul-temp-all {
+  background-color: limegreen;
+}
+
 .header__container .header .header__lower .header__lower_ul .header__lower_ul-subtypes li a {
   width: 100%;
 }
@@ -320,7 +339,6 @@ html {
 }
 
 .header__container .headerIcon {
-  width: 50%;
   height: auto;
 }
 
@@ -613,6 +631,23 @@ html {
   background-color: rgba(52, 144, 220, 0.5);
 }
 
+.content .content__skiPicker {
+  height: 7em;
+  background-image: url("https://lh3.googleusercontent.com/proxy/NmKGXH-H60_jhOK2Dj0TU3FlCeltRnqDTPSADZ-uIEpcEt-Ro08p68fIUdZ9EkbT0FRTyrB15wHwdAnCBNde-BOg2QX63_vj60j7EEeaKfsoKs3EQhA");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2c2c2c;
+}
+
+.content .content__skiPicker a {
+  height: 100%;
+  display: block;
+}
+
+.content .content__skiPicker a:hover {
+  background-color: #1d68a73b;
+}
+
 .content__brandLogos {
   display: flex;
   flex-wrap: wrap;
@@ -655,6 +690,32 @@ html {
 
 .item .item__container .item__container-item-image {
   margin-bottom: 2em;
+}
+
+.searchPanel__container {
+  display: flex;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: gainsboro;
+}
+
+.searchPanel__container .searchPanel__container__sort {
+  width: 50%;
+  display: flex;
+  padding: 1em;
+}
+
+.searchPanel__container .searchPanel__container__sort p {
+  width: 40%;
+}
+
+.searchPanel__container .searchPanel__container__sort select {
+  width: 60%;
+}
+
+.searchPanel__container .searchPanel__container__stats {
+  width: 50%;
+  display: flex;
 }
 
 /*!

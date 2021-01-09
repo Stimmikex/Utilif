@@ -19,9 +19,11 @@
                 <!--Div Search bar-->
                 <div class="header__upper" id="MyCode" onload="FixMyCode()">
                     <div class="header__upper__search">
-                        <input type="text">
-                        <!-- /img/searchIcon.png -->
-                        <button><img src="/img/header/searchIcon.png" alt="searchimage"></button>
+                        {{-- <form method="get" action="../search"> --}}
+                            <input type="text" name="tag" id="search">
+                            <!-- /img/searchIcon.png -->
+                            <button type="submit" id="searchButton"><img src="/img/header/searchIcon.png" alt="searchimage"></button>
+                        {{-- </form> --}}
                     </div>
                     <!--Div Cart and Info-->
                     <div class="header__upper__info">
@@ -43,19 +45,19 @@
                         ?>
                         @foreach ($types as $type)
                             <li onclick="displaySubtypes(this)">
-                                <p class="btn btn-default">{{$type->name}}</p>
+                                <p class="btn btn-default header__lower_ul-temp">{{$type->name}}</p>
                                 <ul class="header__lower_ul-subtypes" id="subtypes">
-                                    <li><a href="{{route($type->name)}}" class="btn btn-default">All</a></li>
+                                    <li><a href="{{route($type->name)}}" class="btn btn-default header__lower_ul-temp-all">All</a></li>
                                     @foreach ($subtypes as $subtype)
                                         @if ($subtype->type_id == $type->id)
-                                            <li><a href="" class="btn btn-default">{{$subtype->name}}</a></li>
+                                            <li><a href="{{'../'.$type->name.'/'.$subtype->name}}" class="btn btn-default">{{$subtype->name}}</a></li>
                                         @endif
                                     @endforeach
                                 </ul>
                             </li>
                         @endforeach
                         <div class="header__lower_ul__div">
-                            <div class="btn btn-default" id="tester">
+                            {{-- <div class="btn btn-default" id="tester">
                                 <p class="header__lower_ul__div__div__text">Testing</p>
                                 <p onclick="displayUlList()" class="header__lower_ul__div__div__down">+</p>
                                 <ul class="header__lower_ul__div_ul" id="DUL">
@@ -63,7 +65,7 @@
                                     <li>2</li>
                                     <li>3</li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <a href="pages/info.php" class="btn btn-default">Info<img src="/img/header/infoIcon.svg" alt="info image" class="header__upper__info_image"></a>
                             <a href="/cart" class="btn btn-default">Cart ({{ count((array) session('cart')) }}) <img src="/img/header/cartIcon.svg" alt="cart image" class="header__upper__info_image"></a>
                             <a href="{{ route('login') }}" class="btn btn-default">Account<img src="/img/header/accountIcon.svg" alt="account image" class="header__upper__info_image"></a>
@@ -88,15 +90,15 @@
             x.style.display = "0px";
         }
     }
-    function displayUlList() {
-        var x = document.getElementById("DUL");
-        if (x.style.display === "flex") {
-            x.style.display = "none";
-        } else {
-            x.style.zIndex = 2;
-            x.style.display = "flex";
-        }
-    }
+    // function displayUlList() {
+    //     var x = document.getElementById("DUL");
+    //     if (x.style.display === "flex") {
+    //         x.style.display = "none";
+    //     } else {
+    //         x.style.zIndex = 2;
+    //         x.style.display = "flex";
+    //     }
+    // }
     function displaySubtypes(e) {
         var x = e.children;
         if (x[1].style.display === "flex") {
@@ -106,6 +108,17 @@
             x[1].style.display = "flex";
         }
     }
+
+    var searchbar = document.getElementById("search");
+    searchbar.addEventListener("keyup", function(event) {
+        if (event.keyCode == 13) {
+            console.log("test");
+            event.preventDefault();
+            document.getElementById("searchButton").click();
+            location.replace("../search/"+document.getElementById("search").value);
+        }
+    });
+
 </script>
 <script>
 window.onscroll = function() {myFunction()};
